@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* === ROOT RESET === */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* 
+        Handles the sizing of the container
+
+        - Default: content-box :- means the padding and margin takes extra space.
+        Ex. width: 300px; padding: 20px; => means overall width will be 340px.
+
+        - border-box :- means the padding and margin are adjusted within the space provided.
+        Ex. height: 50%; padding: 20px; => means overall height will be 50% 
+            and padding will be adjusted within along with the content.
+    */
+    font-family: "Inter", sans-serif;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* === CSS Variables === */
+:root{
+    --primary-color: #335eea;
+    --link-color: #506690;
+    --btn-hover-color: #2b50c7;
+    --lg-heading: #161c2d;
+    --text-content: #869ab8;
+    
+    --fixed-header-height: 4.5rem;
+}
+
+/* === RESET HTML === */
+body{
+    width: 100%;
+    height: 100vh;
+
+    /* If overflow happens along x-axis => Create a scroll container but keep it hidden to avoid
+    any unnecessary horizontal scrolling.*/
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #fafbfb;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container{
+    /* For smaller screens adjust the width to device-screen width */
+    width: 100%;
+}
+@media screen and (min-width: 1040px) {
+    /* For larger screens adjust the width to 1040px, so the content is visible clearly*/
+    .container{
+        width: 100%; /* Standard practice */
+        margin: 0 auto; /* Here auto works and adjusts the container at center when width is greater than 1040px.*/
+    }
+}
+
+.header{
+    height: var(--fixed-header-height);
+    padding: 0 1.5rem;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo > h2{
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+.nav-menu-list{
+    display: flex;
+    align-items: center;
+}
+.nav-menu-item{
+    margin: 0 2rem; 
+}
+.nav-menu-link{
+    font-size: 1rem;
+    /* line-height: 27px; */
+    color: var(--link-color);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+.nav-menu-link:hover{
+    color: var(--primary-color);
+}
+.toggle-btn, .close-btn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--lg-heading);
+    /* z-index: 4; */
+}
+
+.toggle-btn, .close-btn{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-btn{
+        display: block;
+    }
+    .nav-menu-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4rem;
+    }
+    .nav-menu{
+        position: fixed;
+        width: 90%;
+        height: fit-content;
+        top: 0%;
+        right: -100%;
+        background-color: rgb(240, 240, 240);
+        padding: 3rem;
+        border-radius: 10px;
+        transition: 0.4s ease;
+    }
+    .nav-menu-link{
+        font-size: 1.125rem;
+    }
+    .nav-menu-item{
+        margin: 1rem 0;
+    }
+}
+
+
+.show{
+    right: -30% !important;
+    .close-btn{
+        display: block;
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    
+}
+
+.grid-cols-2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:4rem;
+    align-items: center;
+}
+
+.grid-item-1{
+    padding-left: 1.5rem;
+}
+.grid-item-1 > h1{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+}
+.grid-item-1 > h1 > span{
+    color: var(--primary-color);
+}
+
+.grid-item-1 > p{
+    margin-top: 1.5rem;
+    font-size: 19px;
+    line-height: 28px;
+    color: #334157;
+}
+
+.btn-wrapper{
+    margin-top: 3.5rem;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.btn {
+    width: 110px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--btn-hover-color);
+}
+
+.view-more-btn{
+    width: 180px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-size: 1rem;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.doc-btn {
+    width: 150px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0;
+    background-color: #e1e7fc;
+    color: #0e2a86;
+}
+.team-img-wrapper {
+    width: 500px;
+    max-width: 100%;
+    height: 440px;
+}
+.team-img-wrapper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fits the image in the parent container maintaining the original aspect ratio and without clipping anything unlike cover*/
+}
+
+@media screen and (width < 1024px) {
+    .hero{
+        padding: 0 1rem;
+        padding-top: 0;
+    }
+    .grid-cols-2{
+        grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+        gap: 1rem;
+    }
+    .grid-item-1{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-self: self-start;
+        justify-content: flex-start;
+        padding: 0.5rem;
+    }
+    .grid-item-1 > h1{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .grid-item-1 > p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.7rem;
+    }
+    .btn-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid-item-2 {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:60%;
+        width:60%;
+        justify-self: center;
+    }
+    .team-img-wrapper {
+        height:100%;
+        width:100%;
+    }
+}
+
+@media screen and (height>=1024px) {
+    .grid-item-2{
+        height:60%;
+        width:60%;
+        justify-self: center;
+    }
+    .team-img-wrapper{
+        height:100%;
+        width:100%;
+    }
+
+}
