@@ -6,6 +6,9 @@ The project leverages semantic tags such as header, nav, main, section, article,
 
 ---
 
+**Link to Portfolio**: [https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable1/](https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable1/)
+
+---
 # Purpose
 
 This project aims to learn and apply the following technologies through hands-on implementation.
