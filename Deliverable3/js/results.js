@@ -72,9 +72,9 @@ renderFinalVerdict(percentScore);
 // Event Listners for Reattempt and Home buttons.
 document.getElementById("reattempt").addEventListener("click", () => {
     sessionStorage.clear();
-    location.replace("/questions.html");
+    location.replace("questions.html");
 });
 document.getElementById("home").addEventListener("click", () => {
     sessionStorage.clear();
-    location.replace("/index.html");
+    location.replace("index.html");
 });

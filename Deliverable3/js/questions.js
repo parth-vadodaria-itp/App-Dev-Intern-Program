@@ -256,7 +256,7 @@ document.getElementById("next").addEventListener("click",(event) => {
     if(qno==20){
       clearInterval(timerSchedule);
       calculateResult(selectedAnswers);
-      location.replace("/results.html");
+      location.replace("results.html");
     }
     else navigateToQuestion(qno,selectedAnswers);
 });
