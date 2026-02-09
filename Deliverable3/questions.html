@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Timepass Quiz</title>
+</head>
+<body>
+    <header class="w-full h-[10vh] border-b border-gray-300 flex items-center">
+        <div class="w-full p-2 ml-2 md:ml-4">
+            <span class="text-lg md:text-2xl font-bold">HTML Quiz</span>
+        </div>
+        <div class="w-full p-2">
+            <meter class="w-full" min="0" max="20" id="answered-cnt-meter"></meter>
+        </div>
+        <div class="w-full text-end p-2 mr-2 md:mr-4 text-lg md:text-2xl" id="remaining-time">00:00:00</div>
+    </header>
+    
+    <main class="h-[80vh] grid max-md:grid-rows-2 max-md:grid-rows-[1fr_2fr] md:grid-cols-2 overflow-hidden p-2">
+        <section class="h-full text-xl p-2 md:p-6 overflow-hidden max-md:border-b md:border-r border-gray-300" id="question"></section>
+        <section class="max-h-full text-lg p-2 md:p-6 overflow-y-auto" id="options">
+            <ul class="flex flex-col gap-4 *:border *:border-solid *:rounded-xl *:border-gray-300 *:p-2" id="options-container">
+            </ul>
+        </section>
+    </main>
+    
+    <footer class="w-full h-[10vh] px-6 py-2 border-t border-gray-300">
+        <div class="w-full h-full flex items-center justify-between">
+            <button id="previous" class="bg-indigo-900 rounded-full text-white font-medium px-6 py-2 cursor-pointer focus-visible:outline focus-visible:outline-violet-800 focus-visible:outline-4 focus-visible:outline-offset-2">Previous</button>
+            <button id="next" class="bg-indigo-900 rounded-full text-white font-medium px-6 py-2 cursor-pointer focus-visible:outline focus-visible:outline-violet-800 focus-visible:outline-4 focus-visible:outline-offset-2">Next</button>
+        </div>
+    </footer>
+
+    <script src="js/questions.js" module></script>
+    <!-- `defer` specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing -->
+</body>
+</html>
