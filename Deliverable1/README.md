@@ -4,8 +4,9 @@ A structured and accessible personal portfolio developed using HTML5 semantic el
 
 The project leverages semantic tags such as header, nav, main, section, article, and footer to create a meaningful document structure that improves accessibility, SEO, and maintainability.
 
----
+**Link to Portfolio**: [https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable1/](https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable1/)
 
+---
 # Purpose
 
 This project aims to learn and apply the following technologies through hands-on implementation.
