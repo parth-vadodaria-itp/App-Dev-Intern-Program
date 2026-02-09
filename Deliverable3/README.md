@@ -2,6 +2,8 @@
 
 A responsive and interactive quiz application that helps one to challenge oneself, discover gaps and improve accordingly. 
 
+**Link to ChallengY:** [https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable3/](https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable3/)
+
 ---
 
 🎯 Goal
