@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Parth Vadodaria">
+    </head>
+    <body>
+        <header class="header">
+            <div class="site-logo"> Portfolio </div>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact_me">Contact me</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="home" id="home">
+                <article class="intro">
+                    <h1>Building digital experiences that matter.</h1>
+                    <h2>I'm a software developer passionate about building scalable, efficient solutions through collaboration and thoughtful design.</h2>
+                </article>
+
+                <aside>
+                    <figure class="profile-pic">
+                        <img alt="Profile Photo of Parth" src="/images/Profile Photo.jpg" fetchpriority="high">
+                        <figcaption>Parth Vadodaria</figcaption>
+                    </figure>
+                </aside>
+            </section>
+            
+            <section id="skills">
+                <h1 style="text-align: center;">Skills</h1>
+                <h2 style="font-size: 1.25rem;text-align: center; color: grey;">Passionate about building reliable backend systems, optimizing databases, and turning ideas into scalable web applications.</h2>
+
+                <section class="skills">
+                    <article class="skill">
+                        <img class="logo" alt="Programming Languages logo" src="logos/prog-lang.png"><br>
+                        <p><strong>Programming Languages</strong></p>
+                        <p>Java, SQL, JavaScript</p>
+                    </article>
+                    <article class="skill">
+                        <img class="logo" alt="Backend Development logo" src="logos/backend-coding.png"><br>
+                        <p><strong>Backend Development</strong></p>
+                        <p>Spring Boot, Node.js, Express.js, REST APIs</p>
+                    </article>
+                    <article class="skill">
+                        <img class="logo" alt="Databases logo" src="logos/database.png"><br>
+                        <p><strong>Databases</strong></p>
+                        <p>PostgreSQL, SQLite, MongoDB</p>
+                    </article>
+                    <article class="skill">
+                        <img class="logo" alt="Tools logo" src="logos/tools.png"><br>
+                        <p><strong>Tools</strong></p>
+                        <p>Git, GitHub, IntelliJ IDEA, Android Studio, VS Code, pgAdmin, Apache Tomcat</p>
+                    </article>
+                </section>
+            </section>
+
+
+            <section id="projects" style="background-color: rgba(221, 233, 251, 0.345);">
+                <h1 style="text-align: center;">Projects</h1>
+                <h2 style="font-size: 1.25rem; text-align: center; color: grey;">Here are some of the projects I've worked on recently.</h2>
+
+                <section class="projects">
+                    <article class="project">
+                        <header>
+                            <h2>DAU Elective Enrollment Portal</h2>
+                            <a href="https://github.com/Parth3105/DEEP-2.0.0">
+                                <img alt="Link to github repo" src="logos/github-black.svg">
+                            </a>
+                        </header>
+                        <details>
+                            <summary> More Information </summary>
+                            <p> A centralized web application that automated and enhanced elective course registration and allocation based on student preferences, reducing administrative workload and a multi-step registration workflow with slot and course validation, reducing student registration errors. </p>
+                        </details>
+                        <ul class="tech-stack">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>Maven</li>
+                            <li>Thymeleaf</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <header>
+                            <h2>Distributed Object Storage with Versioning</h2>
+                            <a href="https://github.com/Parth3105/DOSV">
+                                <img alt="Link to github repo" src="logos/github-black.svg">
+                            </a>
+                        </header>
+                        <details>
+                            <summary> More Information </summary>
+                            <p> DOSV is a scalable, fault-tolerant file storage system that distributes data across multiple nodes with redundancy and version control. </p>
+                        </details>
+                        <ul class="tech-stack">
+                            <li>Java</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <header>
+                            <h2>FlipThePage</h2>
+                            <a href="https://github.com/Parth3105/FlipThePage">
+                                <img alt="Link to github repo" src="logos/github-black.svg">
+                            </a>
+                        </header>
+                        <details>
+                            <summary> More Information </summary>
+                            <p> FlipThePage is a platform that allows readers to explore a wide range of digital books, while providing authors with tools to upload and manage their works. </p>
+                        </details>
+                        <ul class="tech-stack">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>React.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+
+
+            <section id="contact_me" class="contact-me">
+                <h1 style="text-align: center;">Get In Touch</h1>
+                <h2 style="font-size: 1.25rem;text-align: center; color: grey">Have a project in mind or just want to say hi? Feel free to reach out.</h2>
+
+                <section class="contacts">
+                    <ul>
+                        <li>
+                            <img class="logo" alt="Email logo" src="logos/email.png">
+                            <div>
+                                <strong>Email</strong><br>
+                                parthvadodaria26@gmail.com
+                            </div>    
+                        </li>
+                        <li>
+                            <img class="logo" alt="Phone logo" src="logos/phone.png">
+                            <div>
+                                <strong>Phone</strong><br>
+                                +91 9313138372
+                            </div>    
+                        </li>
+                        <li>
+                            <img class="logo" alt="Location logo" src="logos/location.png">
+                            <div>
+                                <strong>Location</strong><br>
+                                Bhavnagar, Gujarat, India
+                            </div>    
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <footer class="footer">
+                <section>
+                    <div class="site-logo" style="color: white;"> Portfolio </div>
+                    <div class="social-media">
+                        <a href="https://github.com/Parth3105">
+                            <img class="logo" alt="Github logo" src="logos/github-grey.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/in/parth-vadodaria">
+                            <img class="logo" alt="Linkedin logo" src="logos/linkedin.png">
+                        </a>
+                        <a href="https://www.instagram.com/parth.v.03">
+                            <img class="logo" alt="Instagram logo" src="logos/instagram.svg">
+                        </a>
+                        <a href="mailto:parthvadodaria26@gmail.com">
+                            <img class="logo" alt="Mail logo" src="logos/mail.png">
+                        </a>
+                    </div>
+                </section>
+
+                <hr style="width: 100%; border-color: rgba(102, 102, 102, 0.251);">
+
+                <p>© 2026 Parth Vadodaria. All rights reserved.</p>
+
+            </footer>
+        </main>
+    </body>
+</html>
