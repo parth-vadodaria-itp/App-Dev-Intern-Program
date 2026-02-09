@@ -2,7 +2,7 @@
 
 A mobile-first responsive landing page developed using HTML5 and CSS Flexbox/Grid. This project demonstrated effective use of media queries to adapt the layout accross different screen sizes. 
 
-Link to Responsive Landing Page: []()
+**Link to Responsive Landing Page:** [https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable2/](https://parth-vadodaria-itp.github.io/App-Dev-Intern-Program/Deliverable2/)
 
 ---
 
