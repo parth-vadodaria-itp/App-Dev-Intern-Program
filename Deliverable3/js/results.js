@@ -9,9 +9,9 @@ function renderTimeTaken(){
     else{
         let timeTaken=totalTime-timeLeft;
 
-        let sec=timeTaken%60;
-        let mins=Math.max(Math.floor(timeTaken/60),0);
-        let hrs=Math.max(Math.floor(mins/60,0));
+        let hrs=Math.max(Math.floor(timeLeft%3600),0);
+        let mins=Math.max(Math.floor((timeLeft%3600)/60),0);
+        let sec=Math.max((timeLeft%3600)%60,0);
 
         span.textContent=String(hrs).padStart(2,"0")+" : "+String(mins).padStart(2,"0")+" : "+String(sec).padStart(2,"0");
     }

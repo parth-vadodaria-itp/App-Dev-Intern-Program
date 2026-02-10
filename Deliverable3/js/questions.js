@@ -195,9 +195,9 @@ function renderTimer(){
     if(timeLeft<0) return false;
     sessionStorage.setItem("timeLeft",timeLeft);
 
-    let sec=Math.max(timeLeft%60,0);
-    let mins=Math.max(Math.floor(timeLeft/60),0);
-    let hrs=Math.max(Math.floor(mins/60),0);
+    let hrs=Math.max(Math.floor(timeLeft%3600),0);
+    let mins=Math.max(Math.floor((timeLeft%3600)/60),0);
+    let sec=Math.max((timeLeft%3600)%60,0);
 
     let timer=document.getElementById("remaining-time");
     
@@ -216,6 +216,12 @@ function calculateResult(selectedAnswers){
     if(selectedAnswers[j]!==null && selectedAnswers[j]==questions[j].answer) correctCnt++;
   }
   sessionStorage.setItem("correctCnt",correctCnt);
+}
+
+function showResult(){
+  clearInterval(timerSchedule);
+  calculateResult(selectedAnswers);
+  location.replace("results.html");
 }
 
 // Items from session-storage.
@@ -253,11 +259,7 @@ document.getElementById("next").addEventListener("click",(event) => {
     // Updating the question number, store and render the next question.
     qno=Math.min(qno+1,questions.length);
     sessionStorage.setItem("qno",qno);
-    if(qno==20){
-      clearInterval(timerSchedule);
-      calculateResult(selectedAnswers);
-      location.replace("results.html");
-    }
+    if(qno==20) showResult();
     else navigateToQuestion(qno,selectedAnswers);
 });
 
@@ -265,6 +267,6 @@ document.getElementById("next").addEventListener("click",(event) => {
 /* Event Listener for Time */
 let timerSchedule=setInterval(
   () => {
-    if(!renderTimer()) clearInterval(timerSchedule);
+    if(!renderTimer()) showResult();
   }
 , 1000);
