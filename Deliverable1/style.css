@@ -1,6 +1,7 @@
-/* *{
-    box-sizing: border-box;
-} */
+a{
+    text-decoration: none;
+    color:black;
+}
 
 .header{
     position: sticky;
@@ -26,7 +27,6 @@
 
 .navbar a{
     color: rgb(110, 110, 110);
-    text-decoration: none;
     font-weight: bold;
     font-family: Calibri;
     font-size: large;
@@ -98,11 +98,6 @@ main section {
     padding: 20px;
     border-radius: 10px;
     background-color:aliceblue;
-}
-
-.logo{
-    width: 25px;
-    height: 25px;
 }
 
 .projects{

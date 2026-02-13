@@ -2,19 +2,21 @@
 <html lang="en-US">
     <head>
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio of Parth Vadodaria">
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
         <header class="header">
             <div class="site-logo"> Portfolio </div>
             <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact_me">Contact me</a>
+                <a href="#home" aria-label="Home">Home</a>
+                <a href="#skills" aria-label="Skills">Skills</a>
+                <a href="#projects" aria-label="Projects">Projects</a>
+                <a href="#contact_me" aria-label="Contact me">Contact me</a>
             </nav>
         </header>
 
@@ -39,22 +41,22 @@
 
                 <section class="skills">
                     <article class="skill">
-                        <img class="logo" alt="Programming Languages logo" src="logos/prog-lang.png"><br>
+                        <i class="ri-code-line ri-xl" aria-hidden="true"></i>
                         <p><strong>Programming Languages</strong></p>
                         <p>Java, SQL, JavaScript</p>
                     </article>
                     <article class="skill">
-                        <img class="logo" alt="Backend Development logo" src="logos/backend-coding.png"><br>
+                        <i class="ri-server-line ri-xl" aria-hidden="true"></i>
                         <p><strong>Backend Development</strong></p>
                         <p>Spring Boot, Node.js, Express.js, REST APIs</p>
                     </article>
                     <article class="skill">
-                        <img class="logo" alt="Databases logo" src="logos/database.png"><br>
+                        <i class="ri-database-2-line ri-xl" aria-hidden="true"></i>
                         <p><strong>Databases</strong></p>
                         <p>PostgreSQL, SQLite, MongoDB</p>
                     </article>
                     <article class="skill">
-                        <img class="logo" alt="Tools logo" src="logos/tools.png"><br>
+                        <i class="ri-tools-line ri-xl" aria-hidden="true"></i>
                         <p><strong>Tools</strong></p>
                         <p>Git, GitHub, IntelliJ IDEA, Android Studio, VS Code, pgAdmin, Apache Tomcat</p>
                     </article>
@@ -70,8 +72,8 @@
                     <article class="project">
                         <header>
                             <h2>DAU Elective Enrollment Portal</h2>
-                            <a href="https://github.com/Parth3105/DEEP-2.0.0">
-                                <img alt="Link to github repo" src="logos/github-black.svg">
+                            <a href="https://github.com/Parth3105/DEEP-2.0.0" aria-label="Visit DEEP Project github repository">
+                                <i class="ri-github-fill ri-xl" aria-hidden="true"></i>
                             </a>
                         </header>
                         <details>
@@ -89,8 +91,8 @@
                     <article class="project">
                         <header>
                             <h2>Distributed Object Storage with Versioning</h2>
-                            <a href="https://github.com/Parth3105/DOSV">
-                                <img alt="Link to github repo" src="logos/github-black.svg">
+                            <a href="https://github.com/Parth3105/DOSV" aria-label="Visit DOSV Project github repository">
+                                <i class="ri-github-fill ri-xl" aria-hidden="true"></i>
                             </a>
                         </header>
                         <details>
@@ -106,8 +108,8 @@
                     <article class="project">
                         <header>
                             <h2>FlipThePage</h2>
-                            <a href="https://github.com/Parth3105/FlipThePage">
-                                <img alt="Link to github repo" src="logos/github-black.svg">
+                            <a href="https://github.com/Parth3105/FlipThePage" aria-label="Visit FlipThePage Project github repository">
+                                <i class="ri-github-fill ri-xl" aria-hidden="true"></i>
                             </a>
                         </header>
                         <details>
@@ -132,21 +134,21 @@
                 <section class="contacts">
                     <ul>
                         <li>
-                            <img class="logo" alt="Email logo" src="logos/email.png">
+                            <i class="ri-mail-fill ri-2x" aria-hidden="true"></i>
                             <div>
                                 <strong>Email</strong><br>
                                 parthvadodaria26@gmail.com
                             </div>    
                         </li>
                         <li>
-                            <img class="logo" alt="Phone logo" src="logos/phone.png">
+                            <i class="ri-phone-fill ri-2x" aria-hidden="true"></i>
                             <div>
                                 <strong>Phone</strong><br>
                                 +91 9313138372
                             </div>    
                         </li>
                         <li>
-                            <img class="logo" alt="Location logo" src="logos/location.png">
+                            <i class="ri-map-pin-fill ri-2x" aria-hidden="true"></i>
                             <div>
                                 <strong>Location</strong><br>
                                 Bhavnagar, Gujarat, India
@@ -160,17 +162,17 @@
                 <section>
                     <div class="site-logo" style="color: white;"> Portfolio </div>
                     <div class="social-media">
-                        <a href="https://github.com/Parth3105">
-                            <img class="logo" alt="Github logo" src="logos/github-grey.svg">
+                        <a href="https://github.com/Parth3105" aria-label="Visit Parth Vadodaria's Github profile">
+                            <i class="ri-github-fill ri-xl"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/parth-vadodaria">
-                            <img class="logo" alt="Linkedin logo" src="logos/linkedin.png">
+                        <a href="https://www.linkedin.com/in/parth-vadodaria" aria-label="Visit Parth Vadodaria's LinkedIn profile">
+                            <i class="ri-linkedin-box-fill ri-xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/parth.v.03">
-                            <img class="logo" alt="Instagram logo" src="logos/instagram.svg">
+                        <a href="https://www.instagram.com/parth.v.03" aria-label="Visit Parth Vadodaria's Instagram profile">
+                            <i class="ri-instagram-fill ri-xl"></i>
                         </a>
-                        <a href="mailto:parthvadodaria26@gmail.com">
-                            <img class="logo" alt="Mail logo" src="logos/mail.png">
+                        <a href="mailto:parthvadodaria26@gmail.com" aria-label="Mail Parth Vadodaria">
+                            <i class="ri-mail-fill ri-xl"></i>
                         </a>
                     </div>
                 </section>
