@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>ChallengY</title>
+</head>
+<body>
+    <main class="w-full h-vh bg-sky-50">
+        <header class="h-[10vh]">
+            <h1 class=" text-2xl md:text-4xl text-orange-900 p-2 md:p-4 ml-4 font-bold align-middle">ChallengY</h1>
+        </header>
+        <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 h-[90vh] items-center justify-center">
+            <div class="max-md:h-full max-md:order-2 p-4 md:max-lg:p-6 md:p-8 max-md:self-start">
+                <section>
+                    <h1 class="text-3xl/10 md:max-lg:text-4xl/14 md:text-5xl/16 font-black">Think you know it?<br>Let's find out.</h1>
+                    <h2 class="mt-4 md:mt-6 text-base/7 md:text-2xl/10">Take quick, interactive quizzes that make learning feel effortless. Challenge yourself, discover gaps, and grow with every question.</h2>
+                </section>
+
+                <!-- left-1/2: moves the element’s left edge to the center -->
+                <!-- -translate-x-1/2: pulls it back by half of its own width -->
+                <div class="max-md:absolute max-md:bottom-1/20 max-md:left-1/2 max-md:-translate-x-1/2">
+                    <button onclick="browseQuiz()" class="bg-violet-600 max-md:justify-self-center md:mt-10 py-2 md:py-3 px-4 md:px-6 text-lg md:text-2xl rounded-full text-white font-semibold flex items-center gap-4 focus-visible:outline focus-visible:outline-black focus-visible:outline-4 focus-visible:outline-offset-2 cursor-pointer">Browse Quiz <i class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div>
+                <img src="../images/quiz-lp-img.png" alt="Interactive Quiz Image">
+            </div>
+        </div>
+    </main>
+
+    <script defer>
+        function browseQuiz(){
+            sessionStorage.clear();
+            location.href="questions.html";
+        }
+    </script>
+</body>
+</html>
