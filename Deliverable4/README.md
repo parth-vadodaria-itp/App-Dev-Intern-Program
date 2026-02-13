@@ -32,3 +32,32 @@ This project aims to modularize and unit test the core functionalites of the exi
 - Jest
 
 ---
+
+## 📂 Project Structure
+
+```text
+Deliverable4/
+├── src/
+│   ├── data/
+│   │   ├── quiz-data.js
+│   ├── dom/
+│   │   ├── questions.js
+│   │   ├── results.js
+│   ├── images/
+│   │   ├── quiz-lp-img.png
+│   ├── services/
+│   │   ├── resultService.js
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── questions.html
+│   │   ├── results.html
+│   └── utils/
+│       ├── generalUtils.js
+├── __tests__/
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+---
