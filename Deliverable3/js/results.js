@@ -9,7 +9,7 @@ function renderTimeTaken(){
     else{
         let timeTaken=totalTime-timeLeft;
 
-        let hrs=Math.max(Math.floor(timeLeft%3600),0);
+        let hrs=Math.max(Math.floor(timeLeft/3600),0);
         let mins=Math.max(Math.floor((timeLeft%3600)/60),0);
         let sec=Math.max((timeLeft%3600)%60,0);
 
